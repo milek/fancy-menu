@@ -1,9 +1,45 @@
-<img src=assets/example-menu.png width=671 height=611 />
+Fancy Menu
+==========
+
+Extension library written Kotlin that enables custom layouts in overflow menu.
+
+Initial version provides ability to specify icon, full support for custom views is in works.
+
+<img src=assets/example-menu.png width=335 height=305 />
 
 Usage
 -----
 
-...
+In Kotlin
+```kotlin
+import pl.khrone.libraries.fancymenu.prepareFancyMenu
+
+class ExampleActivity: Activity()
+{
+    override fun onPrepareOptionsMenu(menu: Menu?): Boolean
+    {
+        prepareFancyMenu(R.id.toolbar)
+        return super.onPrepareOptionsMenu(menu)
+    }
+}
+```
+
+In Java
+```java
+public class ExampleActivity extends Activity
+{
+
+    @Override 
+    public boolean onPrepareOptionsMenu(Menu menu)
+    {
+        FancyMenuKt.prepareFancyMenu(this, R.id.toolbar, null, pl.khrone.libraries.fancymenu.R.layout.fancy_menu_item);
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+}
+```
+
+Where ```R.id.toolbar``` would be your Toolbar from layout.
 
 Things to do
 ------------
