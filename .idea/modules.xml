@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fancy-menu.iml" filepath="$PROJECT_DIR$/fancy-menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fancymenu/fancymenu.iml" filepath="$PROJECT_DIR$/fancymenu/fancymenu.iml" />
+    </modules>
+  </component>
+</project>

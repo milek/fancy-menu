@@ -1,0 +1,6 @@
+<resources>
+
+    <color name="menu_icon_enabled">#ff202020</color>
+    <color name="menu_icon_disabled">#ffcdcdcd</color>
+
+</resources>
